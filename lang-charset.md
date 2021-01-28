@@ -3,9 +3,9 @@
 
 The only encoding the implementation is required to support is [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
 
-Change in character set must be preceeded either by BOM or by an [lang-attr.md](attribute) on a separate line, e.g.:
+Change in character set must be preceeded either by BOM or by an [attribute](lang-attr.md) on a separate line, e.g.:
 
-    #utf-8
+    #UTF-8
 
 ## Basic character set
 
@@ -22,24 +22,21 @@ U+00B3 | ³ | AltGr + 3
 U+00A4 | ¤ | AltGr + 4 | Yes
 U+00D7 | × | AltGr + = | Yes
 U+00F7 | ÷ | AltGr + = + Shift | Yes
--|-|-|-
 U+00AE | ® | AltGr + R
 U+00AB | « | AltGr + [
 U+00BB | » | AltGr + ]
 U+00AC | ¬ | AltGr + \
 U+00A6 | ¦ | AltGr + \ + Shift
--|-|-|-
 U+00F8 | ø | AltGr + L
 U+00D8 | Ø | AltGr + L + Shift
 U+00B6 | ¶ | AltGr + ;
 U+00B0 | ° | AltGr + ; + Shift
 U+00B4 | ´ | AltGr + '
 U+00A8 | ¨ | AltGr + ' + Shift
--|-|-|-
 U+00A9 | © | AltGr + C
 U+00B5 | µ | AltGr + M
 
-# Experimental ideas
+## Experimental ideas
 
 ...
 
