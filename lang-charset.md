@@ -3,9 +3,27 @@
 
 The only encoding the implementation is required to support is [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
 
-Change in character set must be preceeded either by BOM or by an [attribute](lang-attr.md) on a separate line, e.g.:
+Change in active character set is preceeded either by BOM, or by an [attribute](lang-attr.md) on a separate line, e.g.:
 
     #UTF-8
+
+On BOM the active character set changes immediately.  
+When changed by attribute, then the previous character set applies for the rest of the line, including the new-line terminating character.
+
+## New line
+
+[New line](https://en.wikipedia.org/wiki/Newline) starts after one of the following character or character pairs is encountered:
+
+* **CR+LF** U+0D U+0A
+* **LF** U+0A
+* **VT** U+0B
+* **FF** U+0C
+* **CR** U+0D
+* **NL** U+85
+* **LS** U+2028
+* **PS** U+2029
+
+??? Or impose one single character and be done with it ???
 
 ## Basic character set
 
@@ -35,6 +53,8 @@ U+00B4 | ´ | AltGr + '
 U+00A8 | ¨ | AltGr + ' + Shift
 U+00A9 | © | AltGr + C
 U+00B5 | µ | AltGr + M
+
+??? Will programmers be willing to use different layout ???
 
 ## Experimental ideas
 
