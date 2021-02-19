@@ -3,7 +3,7 @@
 
 The only encoding the implementation is required to support is [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
 
-Change in active character set is preceeded either by BOM, or by an [attribute](lang-attr.md) on a separate line, e.g.:
+Change in active character set is preceeded either by BOM, or by an [attribute](attributes.md) on a separate line, e.g.:
 
     #UTF-8
 
@@ -22,8 +22,6 @@ When changed by attribute, then the previous character set applies for the rest 
 * **NL** U+85
 * **LS** U+2028
 * **PS** U+2029
-
-??? Or impose one single character and be done with it ???
 
 ## Basic character set
 
@@ -54,7 +52,7 @@ U+00A8 | ¨ | AltGr + ' + Shift
 U+00A9 | © | AltGr + C
 U+00B5 | µ | AltGr + M
 
-??? Will programmers be willing to use different layout ???
+*??? Will programmers be willing to use different layout ???*
 
 ## Experimental ideas
 

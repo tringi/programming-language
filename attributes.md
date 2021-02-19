@@ -21,7 +21,7 @@ They are permitted to observably affect the execution, the code must not rely on
 * typically at the end of the row
 * user-defined
 
-## [Source code file character set](lang-charset.md)
+## [Source code file character set](charset.md)
 
     #UTF-8
 
