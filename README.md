@@ -9,7 +9,7 @@ TODO:
 * semantics differences, clean-slate C++? runtime? requirements and limitations? calling conventions? visual studio integration
 
 ## Language reference
-* [Text file](charset.md), Comments, Keywords, Identifiers,
+* [Text file](charset.md), [Comments](comments.md), Keywords, Identifiers,
 * Literals, [Attributes](attributes.md), Types, Declarations, Definitions, Expressions, Flow control
 * Objects/Functions, Templates, Modules, Programs
 * Translation

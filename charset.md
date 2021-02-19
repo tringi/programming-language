@@ -25,9 +25,7 @@ When changed by attribute, then the previous character set applies for the rest 
 
 ## Basic character set
 
-Outside of character/string literals and comments, the basic character set matches that of C++ (see [C++ Phases of translation](https://en.cppreference.com/w/cpp/language/translation_phases)) plus several additional characters found under [AltGr](https://en.wikipedia.org/wiki/AltGr_key) on [US International keyboard layout](https://en.wikipedia.org/wiki/QWERTY#US-International).
-
-Only characters that can be typed directly (not using other program/flyout or Alt+# combination) are to be used.
+Outside of character/string literals and comments, the basic character set matches that of C++ (see [C++ Phases of translation](https://en.cppreference.com/w/cpp/language/translation_phases)) plus several additional characters found under [AltGr](https://en.wikipedia.org/wiki/AltGr_key) on [US International keyboard layout](https://en.wikipedia.org/wiki/QWERTY#US-International). Only characters that can be typed directly (not using other program/flyout or Alt+# combination) are to be used.
 
 Code | Character | Keypress | Used
 -|-|-|-
