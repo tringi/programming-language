@@ -11,7 +11,8 @@ They are permitted to observably affect the execution, the code must not rely on
     #name(parameter)
     #name(parameter, parameter)
 
-* name 
+* there is no space between `#` character and attribute name
+* name
 * parameter ??? do any exist ??? parentheses would introduce significant whitespace
 * attribute is terminated by first white-space or a semi-colon character not part of attribute's parameter
 
