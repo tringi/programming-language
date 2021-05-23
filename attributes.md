@@ -18,8 +18,8 @@ They are permitted to observably affect the execution, the code must not rely on
 
 ## Semantics
 
-* after a thing
-* typically at the end of the row
+* after a thing they affect
+* typically at the end of the row, after the the whole statement the affect
 * user-defined
 
 ## [Source code file character set](charset.md)
@@ -28,14 +28,11 @@ They are permitted to observably affect the execution, the code must not rely on
 
 Case-insensitive, changes how the source code file data are interpreted immediately following the terminating semicolon.
 
-
+## TBD
 
     #uninitialized // keep stack trash
-    #deferred
-    
-
-
-## xxx
+    #deferred // evaluation may/should be deferred to any point before first use
+    #ignore-exceptions // any thrown exception is caught and ignored
 
 ...
 
