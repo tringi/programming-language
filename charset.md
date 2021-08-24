@@ -14,12 +14,12 @@ When changed by attribute, then the previous character set applies for the rest 
 
 [New line](https://en.wikipedia.org/wiki/Newline) starts after one of the following character or character pairs is encountered:
 
-* **CR+LF** U+0D U+0A
-* **LF** U+0A
-* **VT** U+0B
-* **FF** U+0C
-* **CR** U+0D
-* **NL** U+85
+* **CR+LF** U+000D U+000A
+* **LF** U+000A
+* **VT** U+000B
+* **FF** U+000C
+* **CR** U+000D
+* **NL** U+0085
 * **LS** U+2028
 * **PS** U+2029
 
