@@ -6,10 +6,10 @@
     #utf-8
     
     import std:io;
-    import "user32.dll" "MessageBeep" MessageBeep
-    import "user32.dll" "MessageBoxW"
+    import "user32.dll" "MessageBeep" as MessageBeep // TODO: arguments + calling convention
+    import "user32.dll" "MessageBoxW" // TODO: arguments + calling convention
     
-    define main : ¶word:32 {
+    define main : $sys:word:32 {
         const msg = "Hello World!";
     
         routine:
@@ -21,8 +21,6 @@
 *note that example above is subject to significant changes*
 
 ## Discussion
-...remove main causes of user errors
-
 TODO:
 * name discussion, goals of the effort
 * semantics differences, clean-slate C++? runtime? requirements and limitations? calling conventions? visual studio integration
