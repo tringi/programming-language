@@ -6,12 +6,14 @@
 ## Character
 
 * internal (24-bit?)
+* TBD: list of special characters
 
 Inferred definition:
 
     var c = 'a';
-    var c = '\n'
-    var c = '\u+123ABC'
+    var c = '\n';
+    var c = '\U+123ABC';
+    var c = '\u{123ABC}';
 
 Explicit conversion:
 
@@ -21,24 +23,24 @@ Declaration:
 
     TBD
 
-String
+## String
 
 * core language feature
 * unspecified internal representation, SSO or COW, until raw data are requested
-* 
+* TBD: raw strings implemented in editor by inserting U+02 (STX) and end by U+03 (ETX) or NUL?, with nesting support
 
-Inferred definition:
+## Inferred definition:
 
     var s = "Hello World!";
     var s = "Hello World!" #utf-16; // suggests internal storage
 
-Integer types
+## Integer types
 
 * 2-complement binary
 
 
 
-Floating point types IEE-754
+## Floating point types IEE-754
 
 
 
