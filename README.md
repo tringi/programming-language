@@ -6,14 +6,14 @@
     #utf-8
     
     import std:io;
-    import "user32.dll" "MessageBeep" as MessageBeep // TODO: arguments + calling convention
-    import "user32.dll" "MessageBoxW" // TODO: arguments + calling convention
+    import "user32.dll" "MessageBeep" (system:word:32) : system:int:32 WINAPI;
+    import "user32.dll" "MessageBoxW" (system:ptr, system:ptr, system:ptr, system:word:32) : system:int:32 WINAPI;
     
-    define main : $sys:word:32 {
+    define main : system:word:32 {
         const msg = "Hello World!";
     
         routine:
-            std:io:print (msg "\n");
+            system:io:print (msg "\n");
             MessageBeep (0);
             return user32.dll!MessageBoxW (null, msg:ucs16, "Hi":ucs16, 0u:32);
     }
