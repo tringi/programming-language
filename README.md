@@ -5,17 +5,17 @@
 
     #utf-8
     
-    import std:io;
-    import "user32.dll" "MessageBeep" (system:word:32) : system:int:32 WINAPI;
-    import "user32.dll" "MessageBoxW" (system:ptr, system:ptr, system:ptr, system:word:32) : system:int:32 WINAPI;
+    import system:io;
+    import "user32.dll" "MessageBeep" (std:word:32) : std:int:32 WINAPI;
+    import "user32.dll" "MessageBoxW" (std:ptr, std:ptr, std:ptr, std:word:32) : std:int:32 WINAPI;
     
-    define main : system:word:32 {
+    define main : std:word:32 {
         const msg = "Hello World!";
     
         routine:
             system:io:print (msg "\n");
             MessageBeep (0);
-            return user32.dll!MessageBoxW (null, msg:ucs16, "Hi":ucs16, 0u:32);
+            return user32.dll!MessageBoxW (null, msg:utf16, "Hi":utf16, 0u:32);
     }
 
 *note that example above is subject to significant changes*
